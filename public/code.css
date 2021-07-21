@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+body{
+    background-color: white;
+}
+
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.intro{
+    text-align: center;
+    font-size: 3rem;
+
+}
+#r1{
+    position: relative;
+    top: 18vh;
+    left: 1vw;
+
+}
+.source{
+    height: 50vh;
+    width: 50vw;
+    border: 5px solid grey;
+    box-shadow: 2px 2px;
+}
+.nav_c{
+    height: 60px;
+    width: 100vw;
+    background-color: rgba(99, 164, 255, 1);
+
+}
+.logo_c img{
+    height: 8vh;
+    width: 4vw;
+    position: relative;
+    top: 0.1rem;
+    left: 1vw;
+}
+.para h3{
+    position: relative;
+    top: -6.4vh;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    left: 7vw;
+    font-size: 2rem;
+
+}
+.nav_d{
+    float: right;
+    position: relative;
+    top: -71px;
+    right: 74px;
+    text-decoration: none;
+    
+}
+.nav_d ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.nav_d ul li{
+    list-style: none;
+    margin: 0px 21px;
+    
+}
+.nav_d ul a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: wheat;
+    font-weight: bolder;
+}
+.hamburger{
+    display: none;
+}
+.mainguru{
+    height: 54vh;
+    width: 47vw;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    position: relative;
+    top: 30vh;
+    left: 5vw;
+    background: url('gmes.jfif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mainguru h3{
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+}
+.mainguru h4{
+    font-size: 2.0rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 69px;
+}
+.you{
+    height: 50px;
+    width: 126px;
+    background: none;
+    border: 4px solid purple;
+    border-radius: 24px;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+}
+.you1{
+    height: 50px;
+    width: 126px;
+    background: none;
+    border: 4px solid purple;
+    border-radius: 24px;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+}
+.mainguru button{
+    position: relative;
+    top: 119px;
+    left: 111px;
+    cursor: pointer;
+}
+.you:hover{
+    background-color: purple;
+}
+.you1:hover{
+    background-color: purple;
+}
+.indexing{
+   height: 80vh;
+    width: 30vw;
+    float: right;
+    top: 18vh;
+    left: 70%;
+    background-color: rgba(99, 164, 255, 5.5);
+    position: fixed;
+    overflow-y: auto;
+}
+.indexing ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid blue;
+
+}
+.indexing ul a{
+    text-decoration: none;
+}
+.indexing ul{
+    position: relative;
+    top: 20px;
+}
+.n1{
+    position: relative;
+    top: 50vh;
+}
+.video1{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+}
+.text1{
+position: relative;
+top: 10vh;
+left: 5vw;
+
+}
+.code{
+    height: 500px;
+    width: 40vw;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+    border: 2px solid rgba(99, 164, 255, 1);
+    position: relative;
+    top: 100px;
+    left:5vw
+}
+.n2{
+    position: relative;
+    top: 72vh;
+}
+.video1{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+}
+.text1{
+position: relative;
+top: 10vh;
+left: 5vw;
+
+}
+.code{
+    height: 500px;
+    width: 40vw;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+    border: 2px solid rgba(99, 164, 255, 1);
+    position: relative;
+    top: 100px;
+    left:5vw
+}
+ #loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

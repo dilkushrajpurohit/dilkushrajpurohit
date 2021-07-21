@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilkush|blog</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="code.css">
+    <script src="blog.js"></script>
+</head>
+<style>
+    body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    font-family: Raleway;
+}
+
+header{
+    background: #2b303b;
+    height: 50px;
+    width:100%;
+    display: flex;
+    color:#fff;
+}
+
+.flash-logo{
+    height:60px;
+    border-radius: 8px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+section{
+    padding: 15px;
+    width:calc(100% - 45px);
+}
+
+.logo img{
+    height: 35px;
+    padding: 6px;
+    margin-left: 20px;
+}
+
+
+.flash-comments{
+    border:1px solid #aeaeae;
+    border-radius: 10px;
+    width:50%;
+    overflow: hidden;
+}
+
+.post{
+    padding-top:10px;
+}
+
+.flash-comments .header{
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.flash-comments .header .text{
+    padding-left:15px;
+    line-height: 25px;
+}
+
+.flash-comments .comment{
+    display: flex;
+    border-bottom:1px solid #eaeaea;
+    padding: 4px;
+}
+    .bloging{
+height:65vh;
+width: 50vw;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+margin: 10vh auto;
+border: 5px solid lightblue;
+border-radius: 5px;
+background: url("bl.jfif");
+    }
+    body{
+       background-color:  #f1f1f1;
+       overflow-y: auto;
+    }
+    .omega{
+        background-color: #fff;
+        height: 70vh;
+        width: 55vw;
+        margin: 10px auto;
+    }
+    .flash-comments form{
+    margin-bottom: 0px;
+}
+
+.flash-comments .comment-form{
+    display: flex;
+    padding: 6px;
+    border-bottom:1px solid #eaeaea;
+}
+
+.comment-form .left-side{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.comment-form .left-side .row{
+    flex: 0 auto;
+    display: flex;
+    align-content: center;
+}
+.comment{
+    position: relative;
+    top: 50vh;
+    left: 20vw;
+}
+
+.comment-form .left-side .row input{
+    height: 32px;
+    width: 80%;
+}
+
+.comment-form .left-side .row textarea{
+    height: 42px;
+    margin-top:8px;
+}
+
+.comment-form .right-side{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-form .right-side button{
+    white-space: pre-wrap;
+}
+
+.comment-form textarea{
+    width:100%;
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+    .mm{
+        height:65vh;
+width: 50vw;
+background-color: rgb(194, 51, 151,0.3);
+
+    }
+    .blog_btn{
+        background: none;
+        border: 3px solid green;
+        border-radius: 20px;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: 20vh;
+        margin: 0 auto;
+        left: 15vw;
+    }
+    .blog_btn:hover{
+        background: lime;
+    }
+    .full_bg{
+        height: 200vh;
+        width:80vw;
+        background-color: #fff;
+        position: relative;
+        top: 50px;
+        left: 130px;
+    }
+    .bg1{
+        border-bottom: 2px solid   #f1f1f1 ;
+        height: 200px;
+        width: 80vw;
+        margin: 0px auto;
+        margin-top: 10rem;
+        overflow-y: auto;
+
+    
+    }
+    .bg1 h3{text-align: center;
+        vertical-align: middle;
+        font-family: 'Hind Siliguri', sans-seri;color: lime;
+
+    }
+    .bg_h4{
+        font-family: 'Hind Siliguri', sans-seri;
+    }
+    menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 2;
+}
+.comment{
+    height:50vh;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 2;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 2;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 2;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 2;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 2;
+}
+.full_m{
+    height: 50px;
+    width: 50px;
+}
+#h4{
+    visibility: h;
+}
+.d{
+    visibility: hidden;
+}
+.flash-comments .user-icon{
+    flex: 0 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.flash-comments .user-icon img{
+    height:45px;
+}
+
+.flash-comments .comment-info{
+    flex:5;
+}
+
+.flash-comments .comment-info .row{
+    display: flex;
+}
+
+.flash-comments .comment-info .name{
+    color: #000;
+}
+
+.flash-comments .comment-info .email{
+    color: #aeaeae;
+    margin-left: 10px;
+}
+
+.flash-comments .comment-info .text{
+    padding-top:6px;
+    font-size: 13px;
+}
+
+/* CSS Code for Animating Comment Element */
+.flash-comments .comment{
+  animation: animationFrames ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: animationFrames ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    transform:  translate(30px,0px)  ;
+  }
+  80% {
+    transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -moz-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -moz-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -webkit-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -o-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -o-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -o-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -ms-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -ms-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+</style>
+<body>
+    <script>
+  
+    </script>
+  
+    <div class="nav_c">
+        <div class="logo_c"><img src="circle-cropped (1).png" alt=""></div>
+        <div class="para"><h3 style="top: -10.4vh;position: relative;">Factag</h3></div>
+        <nav class="nav_d" style="top: -90px;position: relative;">
+          <ul>
+           <a href="/"> <li>Home</li></a>
+           <a href="#"> <li>Code</li></a>
+           <a href="#"> <li>Signup</li></a>
+           <a href="#"> <li>Login</li></a>
+           <a href="#"> <li>Contact-us</li></a>
+           <li class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+           </svg></li>
+           </ul>
+        </nav>
+        </div>
+        <div class="omega">
+   <div class="bloging">
+       <div class="mm">
+        <h2 style="font-size: 3rem;opacity: 3;text-align: center;position: relative;top: 3vh;left: 30px;font-family: 'Hind Siliguri', sans-serif;"><span style="color: lime;border-bottom: 5px solid lime;border-radius: 10px;">Welcome</span> to Blogs</h2>
+        <h3 style="font-size: 2rem;color: white;font-family: 'Hind Siliguri', sans-serif;text-align: center;position: relative;top: 11vh;">Hey for more imformation you can watch <br>our videoes on youtube for free.</h3>
+        <button class="blog_btn">Blogs</button>
+        <button class="blog_btn">Youtube</button>
+
+        <div class="dat">
+          
+        </div>
+       </div>
+
+   </div>
+</div>
+<div class="full_bg">
+    <div class="full_m">
+<div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj()" aria-label="Main Menu">
+    <svg width="20" height="20" viewBox="0 0 100 100">
+      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+      <path class="line line2" d="M 20,50 H 80" />
+      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+    </svg>
+  </button>
+<h3>How to start web development ? From scratch??</h3>
+<h4 id="h4" name="ma" class="d">After deciding I wanted to get into web development the first question on my mind was “What do I learn?” After doing some research, I ended up making my learning path based on what most entry-level web developer positions asked for, which was:
+
+    JavaScript
+    HTML & CSS
+    CSS Preprocessors (Less & Sass)
+    Responsive Design
+    AngularJS
+    Design Patterns
+    Git
+    NodeJS
+    Task Runners
+    Here’s how it went.
+    
+    Javascript
+    I began my Journey learning JavaScript through CodeSchool (paid) and Codecademy (free). If you don’t know about these, they’re great websites that allow you to learn to code by coding inside the browser.</h4>
+
+</div>
+
+</div>
+<div class="full_m">
+    <div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj1()" aria-label="Main Menu">
+        <svg width="20" height="20" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+      <h3>Which programming language i have to learn firt ??</h3>
+      <h4 id="h4_a" class="d">f you’re trying to decide which programming language to learn first, the first step is understanding what a program language is in the first place. The short answer, as defined in a recent blog post on what is a programming language, is that “programming languages are the tools we use to write instructions for computers to follow.”
+
+        Computers think in binary and programming languages help us translate 1s and 0s into something that can be more easily understood by humans. Programmers are the ambassadors between the worlds of humans and computers, and programming languages are the tools they use to tell computers what to do.
+        </h4>
+      
+    </div>
+    
+    </div>
+        <div class="full_m">
+<div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj2()" aria-label="Main Menu" >
+    <svg width="20" height="20" viewBox="0 0 100 100" onclick="raj()">
+      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+      <path class="line line2" d="M 20,50 H 80" />
+      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+    </svg>
+  </button>
+  <h3>Top programming</h3>
+  <h4 id="h4_b" class="d">After deciding I wanted to get into web development the first question on my mind was “What do I learn?” After doing some research, I ended up making my learning path based on what most entry-level web developer positions asked for, which was:
+  
+      JavaScript
+      HTML & CSS
+      CSS Preprocessors (Less & Sass)
+      Responsive Design
+      AngularJS
+      Design Patterns
+      Git
+      NodeJS
+      Task Runners
+      Here’s how it went.
+      
+      Javascript
+      I began my Journey learning JavaScript through CodeSchool (paid) and Codecademy (free). If you don’t know about these, they’re great websites that allow you to learn to code by coding inside the browser.</h4>
+  
+</div>
+
+</div>
+<div class="full_m">
+    <div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj3()" aria-label="Main Menu">
+        <svg width="20" height="20" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+      <h3>Best programming languages for 2021???</h3>
+      <h4 id="h4_c" class="d">1. JavaScript
+        What this language is used for: 
+        
+        Web development
+        Game development
+        Mobile apps 
+        Building web servers
+        According to Stack Overflow’s 2020 Developer Survey, JavaScript currently stands as the most commonly-used language in the world (69.7%), followed by HTML/CSS (62.4%), SQL (56.9%), Python (41.6%) and Java (38.4%). It is also the most sought-out programming language by hiring managers in the Americas (PDF, 2.4 MB). 
+        
+        JavaScript is used to manage the behavior of web pages. With it, coders can create dynamic web elements such as animated graphics, interactive maps, clickable buttons and more. Programmers who use HTML, CSS and JavaScript in tandem obtain a higher level of website control and can provide a better user experience in terms of navigation and readability. 
+        
+        JavaScript is the most common coding language in use today around the world. This is for a good reason: most web browsers utilize it and it’s one of the easiest languages to learn. JavaScript requires almost no prior coding knowledge — once you start learning, you can practice and play with it immediately. 
+        
+        Moreover, because the language is so ubiquitous, there are countless communities, courses and avenues of professional support available online. This support, in addition to the language’s top-notch usability, makes JavaScript number one on our list of the most in-demand programming languages. 
+        
+        Additional Resources:
+        
+        Coding Resources: Learn JavaScript — Berkeley Boot Camps
+        Learn JavaScript — freecodecamp
+        JavaScript and JQuery: Interactive Front End Web Development — Jon Duckett
+        Learn JavaScript By Building Seven Games — freecodecamp
+        2. Python
+        What this language is used for:
+        
+        Back end development 
+        Data science 
+        App development
+        Python is a general-purpose programming language that empowers developers to use several different programming styles (i.e., functional, object-oriented, reflective, etc.) when creating programs. Several popular digital tools and platforms were developed with Python, including YouTube, Google Search and iRobot machines. It is also, according to HackerRank, the second-most in-demand programming language for hiring managers in the Americas after Python (PDF, 2.4 MB).
+        
+        As one of the more easy-to-learn and -use languages, Python is ideal for beginners and experienced coders alike. The language comes with an extensive library that supports common commands and tasks. Its interactive qualities allow programmers to test code as they go, reducing the amount of time wasted on creating and testing long sections of code.  
+        
+        That said, even advanced users would benefit from adding Python to their mental catalog of programming languages; with over 50% of hiring managers (PDF, 2.4MB) seeking candidates who know the language, Python is easily one of the most marketable and in-demand programming languages of 2021. 
+        
+        Additional Resources:
+        
+        Coding Resources: Learn Python — Berkeley Boot Camps
+        Learn Python — freecodecamp
+        The Quick Python Book — Naomi Ceder
+        The Real Python Podcast — Real Python 
+        3. HTML
+        What this language is used for: 
+        
+        Web documents 
+        Website development 
+        Website maintenance
+        HTML stands for HyperText Markup Language. Don’t let the complicated-sounding name fool you, though; HTML is one of the most accessible stepping stones into the world of programming. 
+        
+        Technically, HTML is a markup language, which means that it is responsible for formatting the appearance of information on a website. Essentially, HTML is used to describe web pages with ordinary text. It doesn’t have the same functionality as other programming languages in this list and is limited to creating and structuring text on a site. Sections, headings, links and paragraphs are all part of the HTML domain. 
+        
+        As of 2020, HTML shares its #2 spot on Stack Overflow’s list of the most commonly used languages in the world with CSS. 
+        
+        Additional Resources:
+        
+        Coding Resources: Learn HTML — Berkeley Boot Camps 
+        Build a Website With HTML (Course) — freecodecamp
+        HTML and CSS: Design and Build Websites — Jon Duckett
+        Intro to HTML/CSS: Making Webpages — Khan Academy
+        4. CSS
+        What this language is used for: 
+        
+        Web documents 
+        Website development 
+        Website design
+        CSS, or cascading style sheets, is usually applied in conjunction with HTML and governs the site’s appearance. While HTML organizes site text into chunks, CSS is responsible for determining the size, color and position of all page elements.  
+        
+        CSS is convenient, too; the cascading part of the name means that an applied style will cascade down from parent elements to all children elements across the site. This feature means that once users determine aesthetics for the main parent, they won’t have to manually repeat their code across a website. Moreover, the delegation of site organization to HTML and aesthetics to CSS means that users don’t have to completely rewrite a web page just to change a color. 
+        
+        CSS is an approachable language that allows beginning programmers to dip their toes in the metaphorical coding pool. If you’re new to coding, there’s no reason not to learn CSS before tackling more complex languages!
+        
+        Additional Resources:
+        
+        Coding Resources: Learn CSS  — Berkeley Boot Camps 
+        HTML and CSS: Design and Build Websites — Jon Duckett 
+        Intro to HTML/CSS: Making Webpages — Khan Academy
+        CSS Basics — Khan Academy
+        5. Java
+        What this language is used for: 
+        
+        E-commerce 
+        Finance
+        App development
+        Java is a general use and object-oriented programming language. In object-oriented programming, developers create objects that encompass functions and data, which can then be used to provide structure for programs and applications. 
+        
+        Java currently ranks as the third-most sought-after programming language for hiring managers globally (PDF, 2.4 MB) and has held the #5 spot on Stack Overflow’s list of the most commonly used languages for two years. 
+        
+        Java’s popularity is for good reason; this language is relatively easy to learn and use, boasts incredible security and can handle massive amounts of data. These features make Java an ideal language for the online finance sector, and it is often applied in industries such as banking, billing and the stock market. 
+        
+        The versatility of the language, however, is what learners find really appealing. Touted as a “write-once, run-anywhere” language, Java can effectively run on any operating system, regardless of which OS was used to write the original code. It is thus ideal for writing apps not only for mobile phones and computers, but also remote processors, sensors and a variety of other consumer products. 
+        
+        Additional Resources:
+        
+        Learn Java — Codecademy 
+        Real-World Java Exercises — CodeGym 
+        Java: A Beginner’s Guide — Herbert Schildt
+        6. SQL
+        What this language is used for: 
+        
+        Database management 
+        Sales reports 
+        Business management
+        SQL, or Structured Query Language, is a language that allows programmers to query and manipulate databases. As a domain-specific language, it is designed mainly for managing data within an RDBMS (relational database management system). Put simply, SQL can locate and retrieve data from a database, as well as update, add or remove records. 
+        
+        While SQL is highly functional, it tends to work better with small databases and doesn’t always lend itself to managing expansive ones. 
+        
+        That said, SQL still ranks as the third-most-used language in the programming industry, with over half (54.7%) of surveyed developers reporting that they use it. 
+        
+        Additional Resources:
+        
+        Coding Resources: Learn SQL — Berkeley Boot Camps 
+        Learn SQL — Codecademy
+        NoSQL Databases Explained — IBM Cloud
+        SQL & NoSQL Databases: Models, Languages, Consistency Options and Architectures for Big Data Management — Andreas Meier and Michael Kaufmann 
+        7. NoSQL
+        What this language is used for: 
+        
+        Database management 
+        Sales reports 
+        Business management
+        NoSQL, or Non-relational SQL, was created to improve SQL’s scalability while retaining the other language’s ease of use. 
+        
+        Remember, SQL utilizes relational database/stream management systems that keep data in tables and allows users to manipulate and extract data. NoSQL databases, on the other hand, don’t use tables and can be more useful than their predecessors for specific applications, such as storing data in a hierarchical network or supporting large-scale, cloud-based applications. 
+        
+        Because these languages are both so versatile, they rank high on our list of the most in-demand coding languages. 
+        
+        Additional Resources:
+        
+        Hands-On NoSQL: A Practical Guide to Design and Implementation with Technical Case Studies — Arsames Qajar and Dan Sullivan
+        NoSQL Databases Explained — IBM Cloud
+        SQL & NoSQL Databases: Models, Languages, Consistency Options and Architectures for Big Data Management — Andreas Meier and Michael Kaufmann 
+        8. C#
+        What this language is used for: 
+        
+        Game development
+        Desktop/web/mobile apps 
+        VR
+        Also stylized as C Sharp, this language belongs to the object-oriented family of programming languages. C# was released in 2002 by Microsoft and stands today as a much-loved improvement on the C++ coding language. 
+        
+        As a general-purpose language, C# is growing in popularity for developing web and desktop applications; according to HackerRank, roughly one of every five hiring managers (PDF, 2.4 MB) is looking for a developer that can code with C#. There’s no denying that it is one of the most in-demand coding languages for the upcoming year; however, there are other reasons to have this skill on your radar.
+        
+        As with other popular languages, an enormous community works with C# and offers support to new learners. Because of this, learning C# may be easier than attempting to learn some of the newer and less-documented languages. Plus, C# is ideal for building ever-more-popular mobile apps and games. There’s little doubt that this language will continue to be useful in the coming years. 
+        
+        Additional Resources:
+        
+        Learn C# — Microsoft
+        C# Tutorial — freecodecamp
+        Modern Cross-Platform Development: Build Applications With C# — Mark J. Price
+        9. Rust 
+        What this language is used for:
+        
+        Operating systems 
+        VR 
+        Web browsers
+        According to Stack Overflow, Rust has consistently ranked at the top of the most-loved programming languages, with 86% of users claiming that they were interested in continuing to develop with it. 
+        
+        However, Rust users only accounted for 3% of developers in the survey, which indicates that the vast majority of programmers are unfamiliar with its usefulness. Rust is a “multi-paradigm” programming language, which means that it allows developers to work in a variety of programming styles. In syntax, it is comparable to C++, though it supports more wide-ranging applications. 
+        
+        If you’re looking for faster compilation, better cross-platform capabilities or just better career prospects, Rust is a great language to pick up. 
+        
+        10. Perl
+        What this language is used for:
+        
+        System administration 
+        GUI development 
+        Network programming
+        Perl isn’t the most commonly used language on the market. In fact, just 3.1 percent of developers used it in 2020, and it didn’t even make Stack Overflow’s commonly used languages list for 2019. However, we are recommending it for a reason. If you’re already well into your career, learning Perl could significantly boost your earnings potential. 
+        
+        According to HackerRank, developers who know Perl tend to make 54 percent more than the average developer (PDF, 2.4MB). That said, it is worth noting that most of the people who know these are senior developers, who tend to make more at a baseline — thus, attempting to quantify the “bonus” that a programming language provides may be somewhat tricky. That said, learning a language like Perl may still make a junior developer better suited for a promotion or raise. 
+        
+        The Practical Extraction and Report Language — or Perl, for short — is a scripting language that is commonly used to extract information from a text file and create a report. 
+        
+        While many programming languages are compiled languages — wherein a target machine translates the program — Perl is an interpreted language, wherein a third “interpreting” machine locates the code and executes a task. Usually, interpreted programs require more CPU, but because Perl is such a concise language, it creates short scripts that can be processed quickly. 
+        
+        Additional Resources:
+        
+        Learn Perl — Perl 
+        Perl Tutorial — Derek Banas 
+        Learning Perl — Randal L. Schwartz and Tom Phoenix
+        11. Go
+        What this language is used for:
+        
+        System/network programming 
+        Audio/video editing 
+        Big Data
+        Developed at Google in 2007, Go is a top-tier programming language. What makes Go really shine is its efficiency; it is capable of executing several processes concurrently. And as far as programming languages go, it has an extensive “vocabulary,” meaning it can display more information than other languages. 
+        
+        Though it uses a similar syntax to C, Go is a standout language that provides top-notch memory safety and management features. Additionally, the language’s structural typing capabilities allow for a great deal of functionality and dynamism. Moreover, Go is not only high up on programmers’ most-loved and most-wanted lists — it also correlates to a 33% salary bump (PDF, 2.4 MB).
+        
+        Additional Resources:
+        
+        Learn Go — freecodecamp
+        Go Annotated Tutorials — Go By Example
+        Introducing Go — Caleb Doxsey 
+        Final Thoughts
+        Whether you are an established coder or just starting to look into the industry, learning a new language is one of the best ways to advance your programming career. But how can you start your educational journey? 
+        
+        Your first step depends on you, your schedule and the resources you have at hand.   
+        
+        A college program, for example, will provide you with a comprehensive education in the theory and practice of programming — however, the typical undergraduate program also demands four years of full-time study and tens of thousands of dollars in tuition funding. 
+        
+        If you want a faster and less expensive educational experience that focuses on skills-based learning, you may want to consider a coding boot camp. Coding boot camps equip you with the hands-on skills and language proficiencies you’ll need to land an entry-level job in the field — all within three to six months. 
+        
+        If you’re looking for the cheapest educational course and don’t mind taking on the responsibility of self-teaching, you may want to consider learning necessary coding skills via tutorials, books and online courses. Keep in mind that while this route offers tremendous flexibility and opportunity for low-cost learning, it may not be a fit for students who need external motivation. If you know that you’ll have trouble keeping yourself accountable, try one of the other options mentioned above!
+        
+        No matter which route you ultimately choose, one point is for certain: there’s no better time to pick up a new skill and kickstart your coding career. 
+        
+        We hope that this list of the most in-demand programming languages for 2021 will help you begin your journey!</h4>
+      
+    </div>
+    
+    </div>
+    <div class="full_m">
+        <div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj4()" aria-label="Main Menu">
+            <svg width="20" height="20" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+          <h3>What is Computer science???</h3>
+          <h4 id="h4_d" class="d">Computer science is the study of algorithmic processes, computational machines and computation itself. As a discipline, computer science spans a range of topics from theoretical studies of algorithms, computation and information to the practical issues of implementing computational systems in hardware and software. Wikipedia</h4>
+        </div>
+        
+        </div>
+        <div class="full_m">
+            <div class="bg1"> <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')),raj5()" aria-label="Main Menu">
+                <svg width="20" height="20" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+              <h3>What is machine Learning???</h3>
+              <h4 id="h4_e" class="d">Machine learning (ML) is the study of computer algorithms that improve automatically through experience and by the use of data.[1] It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to do so.[2] Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.[3]
+
+                A subset of machine learning is closely related to computational statistics, which focuses on making predictions using computers; but not all machine learning is statistical learning. The study of mathematical optimization delivers methods, theory and application domains to the field of machine learning. Data mining is a related field of study, focusing on exploratory data analysis through unsupervised learning.[5][6] In its application across business problems, machine learning is also referred to as predictive analytics.</h4>
+            </div>
+            
+            </div>
+</div>
+<div class="comment">
+    <section>
+           
+        <div class="flash-comments">
+             <div class="header">
+                 <div><img src="./assets/comments.png"></div>
+                 <div class="text">Comments</div>
+             </div>
+             <form class="pure-form" id="comment-form">
+                 <div class="comment-form">
+                     <div class="left-side">
+                         <div class="row">
+                             <input type="text" required placeholder="enter your name" id="new_comment_name">
+                             <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                         </div>
+                         <div class="row">
+                             <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                         </div>
+                     </div>
+                     <div class="right-side">
+                         <button 
+                             type="submit" 
+                             class="button-secondary pure-button">Send Comment</button>
+                     </div>
+                 </div>
+             </form>
+              <div class="comments-list" id="comments-list">
+                     <script id="comment-template" type="text/x-template">
+                         <div class="user-icon">
+                             <img src="./assets/user.png" />
+                         </div>
+                         <div class="comment-info">
+                             <div class="row">
+                                 <div class="name">{{name}}</div>
+                                 <div class="email">{{email}}</div>
+                             </div>
+                             <div class="row">
+                                 <div class="text">{{comment}}</div>
+                             </div>
+                         </div>
+                     </script>
+             </div>
+         </div>
+     </section>
+    
+     <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
+
+ 
+</div>
+<script src="//code.tidio.co/qwkjm9njfjujfduldinztaptyjgt5mdv.js" async></script>
+</body>
+</html>
